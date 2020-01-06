@@ -1,15 +1,15 @@
 Feature: Betimely Sigup Feature 
+
+
 Scenario: Betimely Sigup Test scenario
+	Given user is already on signup page
+	When  login page is betimely
+	Then user enters Email
+	And user enters FullName
+	And user enters Password
+	Then user clicks on submit button
 
-	Given user is already on signup page 
-	When  login page is betimely 
-	Then user enters Email 
-	And user enters FullName 
-	And user enters Password 
-	Then user clicks on submit button 
-
-
-#Scenario Outline: Validate with valid credentials 
+#Scenario Outline: Signup with valid inputs
 #
 #	Given user is already on signup page 
 #	When title of login page is betimely 
@@ -31,10 +31,10 @@ Scenario: Betimely Sigup Test scenario
 #	
 #	Examples: 
 #		|Email|FullName|password|
+#		| |Test One| Welcome@1234|
+#		|ABC3@memorytest.ai| | Welcome@1234|
 #		|ABC3@memorytest.ai|test Two| |
-#		
-#		
-#		
+#		|                |         |          |
 #		
 #Scenario Outline: Verify char length of all fields 
 #
@@ -71,6 +71,20 @@ Scenario: Betimely Sigup Test scenario
 #	Examples: 
 #		|Email|FullName|password|
 #		|ABC4@MEMORYTEST.AI|!@#$%^&*()|WELCOME@!@#$%|
+
+#Scenario Outline: Validate with garbage values
+#
+#	Given user is already on signup page 
+#	When title of login page is betimely 
+#	Then user enters "<Email>" and "<FullName>" and "<Password>" 
+#	Then user clicks on submit button 
+#	Then validate home page title 
+#	
+#	Examples: 
+#		|Email|FullName|password|
+#		|Abc34@ met ry Test . a i|Marc Anthony|Welcome@1234|
+#        |Abc35@memorytest.ai|MAR C An tho ny|Welcome@1234|
+#        |Abc36@memorytest.ai|Marc Anthony|We lc ome@12 34|
 #		
 #Scenario Outline: Verify sql injections 
 #
@@ -96,7 +110,7 @@ Scenario: Betimely Sigup Test scenario
 #		|Email|FullName|password|
 #		|ABC3@memorytest.ai@gmail.com|test Two|Welcome1234|
 #		
-#Scenario Outline: Validate name field by entering email 
+#Scenario Outline: Validate name and password field by entering email 
 #
 #	Given user is already on signup page 
 #	When title of login page is betimely 
@@ -107,6 +121,7 @@ Scenario: Betimely Sigup Test scenario
 #	Examples: 
 #		|Email|FullName|password|
 #		|ABC11@memorytest.ai|@memorytest.ai|Welcome1234|
+#        |xyz23@memorytest.ai|Jayant Gupta|jayant.gupta@memorytest.ai|
 #		
 #Scenario Outline: Validate email with ip address 
 #
@@ -119,18 +134,6 @@ Scenario: Betimely Sigup Test scenario
 #	Examples: 
 #		|Email|FullName|password|
 #		|name@198.168.1.1|SamTest|Welcome1234|
-#		
-#Scenario Outline: Validate email with missing dot 
-#
-#	Given user is already on signup page 
-#	When title of login page is betimely 
-#	Then user enters "<Email>" and "<FullName>" and "<Password>" 
-#	Then user clicks on submit button 
-#	Then validate home page title 
-#	
-#	Examples: 
-#		|Email|FullName|password|
-#		|name@memorytestai|Mactest|Welcome1234|
 #		
 #Scenario Outline: Validate full name without prefix 
 #
@@ -194,14 +197,3 @@ Scenario: Betimely Sigup Test scenario
 #	Examples: 
 #		|Email|FullName|password|
 #		|name@memorytestai|Mactest|Welcome!&@&@^1234testtesttesttesttesttesttesttesttesttesttesttesttestWelcomem1234|
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		

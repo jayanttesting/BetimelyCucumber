@@ -32,7 +32,7 @@ public class TestBase {
 	public TestBase() throws FileNotFoundException {
 		prop = new Properties();
 		FileInputStream fi = new FileInputStream(
-				"D:/Maven Project/Memoryai/Memorytest/src/main/java/com/qa/config/Config.properties");
+				"src/main/java/com/qa/config/Config.properties");
 		try {
 			prop.load(fi);
 		} catch (IOException e) {

@@ -24,12 +24,11 @@ public class SignupStepDefination extends TestBase {
 	WebDriver driver;
 	signupTest signupelements = new signupTest();
 
-
 	@Before
 	public void setup() throws FileNotFoundException {
 		TestBase.getinstance().initialize();
 		driver = TestBase.driver;
-		
+
 		// System.setProperty("webdriver.chrome.driver",
 		// "D:/Betimely
 		// Repo/BetimelyTestAutomation/Resources/chromedriver.exe");
@@ -56,24 +55,24 @@ public class SignupStepDefination extends TestBase {
 	}
 
 	@Then("^user enters Email$")
-	public void user_enters_Email() throws FileNotFoundException {
-		driver = signupTest.driver;
+	public void user_enters_Email() throws Exception {
 		signupTest.getinstance().enteremail("ABC@memorytest.ai");
+		signupTest.getinstance().takescreenshot(driver, "Screenshots/"+"ScreenShot_"+driver.getClass().getName().toString()+".jpg");
 	}
 
 	@Then("^user enters FullName$")
-	public void user_enters_FullName() {
-		driver.findElement(By.id("name")).sendKeys("Test ABC");
+	public void user_enters_FullName() throws FileNotFoundException {
+		signupTest.getinstance().entername("Mac George");
 	}
 
 	@Then("^user enters Password$")
-	public void user_enters_Password() {
-		driver.findElement(By.id("password")).sendKeys("Welcome1234");
+	public void user_enters_Password() throws FileNotFoundException {
+		signupTest.getinstance().enterpassword("Welcome@1234");
 	}
 
 	@Then("^user clicks on submit button$")
-	public void user_clicks_on_submit_button() {
-		driver.findElement(By.name("commit")).click();
+	public void user_clicks_on_submit_button() throws Exception {
+		signupTest.getinstance().clicksubmit();
 	}
 
 	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -94,5 +93,13 @@ public class SignupStepDefination extends TestBase {
 	public void validate_home_page_title() throws Throwable {
 		String title = driver.getTitle();
 		Assert.assertEquals("Welcome to Timely! – Timely", title);
+	
+	}
+
+	@When("^login page is betimely$")
+	public void login_page_is_betimely() {
+		String url = "https://app.hydra.betimely.com/join";
+		Assert.assertEquals(url, driver.getCurrentUrl());
+
 	}
 }

@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "D:/Maven Project/Memoryai/Memorytest/src/main/java/Features/signup.feature", glue = {
+@CucumberOptions(features = "src/main/java/Features", glue = {
 		"StepDefination" }, format = { "pretty", "html:test-GenerateOutput" }, // To
 																				// generate
 																				// reporting
