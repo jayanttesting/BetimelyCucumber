@@ -11,9 +11,19 @@ import com.qa.util.TestBase;
 
 public class signupTest extends TestBase {
 
-	WebDriver driver;
+	public static WebDriver driver;
 
-	@FindBy(xpath = "//input[@id='email']")
+	
+	private static signupTest page;
+
+	public synchronized static signupTest getinstance() throws FileNotFoundException {
+		if (page == null)
+			page = new signupTest();
+
+		return page;
+
+	}
+	@FindBy(id = "email")
 	WebElement emailmemory;
 
 	@FindBy(id = "name")
@@ -31,10 +41,9 @@ public class signupTest extends TestBase {
 
 	}
 
-	public String enteremail(String signupemail) {
+	public void enteremail(String signupemail) {
 		emailmemory.clear();
 		emailmemory.sendKeys(signupemail);
-		return signupemail;
 	}
 
 	public String entername(String fullname) {

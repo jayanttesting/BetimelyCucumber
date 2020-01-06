@@ -4,10 +4,9 @@ import java.io.FileNotFoundException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.qa.base.TestBase;
 import com.qa.pages.signupTest;
+import com.qa.util.TestBase;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -25,13 +24,19 @@ public class SignupStepDefination extends TestBase {
 	WebDriver driver;
 	signupTest signupelements = new signupTest();
 
+
 	@Before
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver",
-				"D:/Betimely Repo/BetimelyTestAutomation/Resources/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://app.hydra.betimely.com/join");
+	public void setup() throws FileNotFoundException {
+		TestBase.getinstance().initialize();
+		driver = TestBase.driver;
+		
+		// System.setProperty("webdriver.chrome.driver",
+		// "D:/Betimely
+		// Repo/BetimelyTestAutomation/Resources/chromedriver.exe");
+		// driver = new ChromeDriver();
+		// driver.get("https://app.hydra.betimely.com/join");
 	}
+
 	@After
 	public void teardown() {
 		driver.quit();
@@ -39,8 +44,8 @@ public class SignupStepDefination extends TestBase {
 
 	@Given("^user is already on signup page$")
 	public void user_is_already_on_signup_page() {
-
-		
+		String url = "https://app.hydra.betimely.com/join";
+		Assert.assertEquals(url, driver.getCurrentUrl());
 	}
 
 	@When("^title of login page is betimely$")
@@ -52,8 +57,8 @@ public class SignupStepDefination extends TestBase {
 
 	@Then("^user enters Email$")
 	public void user_enters_Email() throws FileNotFoundException {
-
-		driver.findElement(By.id("email")).sendKeys("ABC@mwmorytest.ai");
+		driver = signupTest.driver;
+		signupTest.getinstance().enteremail("ABC@memorytest.ai");
 	}
 
 	@Then("^user enters FullName$")
@@ -84,6 +89,7 @@ public class SignupStepDefination extends TestBase {
 		Assert.assertEquals("Welcome to Timely! – Timely", title);
 
 	}
+
 	@Then("^validate home page title$")
 	public void validate_home_page_title() throws Throwable {
 		String title = driver.getTitle();
