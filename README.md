@@ -1,4 +1,4 @@
-# Memorytest
+# MemorytestAI
 Sign up page test cases
 
 # Framework Used : Cucumber
