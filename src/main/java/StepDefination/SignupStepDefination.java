@@ -1,6 +1,9 @@
 package StepDefination;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,22 +25,19 @@ public class SignupStepDefination extends TestBase {
 	}
 
 	WebDriver driver;
+	Logger Log = Logger.getLogger(SignupStepDefination.class.getName());
 	signupTest signupelements = new signupTest();
 
 	@Before
 	public void setup() throws FileNotFoundException {
+		Log.info("Brwser is getting initialized");
 		TestBase.getinstance().initialize();
 		driver = TestBase.driver;
-
-		// System.setProperty("webdriver.chrome.driver",
-		// "D:/Betimely
-		// Repo/BetimelyTestAutomation/Resources/chromedriver.exe");
-		// driver = new ChromeDriver();
-		// driver.get("https://app.hydra.betimely.com/join");
 	}
 
 	@After
 	public void teardown() {
+		Log.info("Closing Browser");
 		driver.quit();
 	}
 
@@ -45,10 +45,12 @@ public class SignupStepDefination extends TestBase {
 	public void user_is_already_on_signup_page() {
 		String url = "https://app.hydra.betimely.com/join";
 		Assert.assertEquals(url, driver.getCurrentUrl());
+		Log.info("Sign up verification passed");
 	}
 
-	@When("^title of login page is betimely$")
-	public void title_of_login_page_is_betimely() {
+	@When("^title of sign page is betimely$")
+	public void title_of_sign_page_is_betimely() {
+		Log.info("Verifying sign up page title");
 		String title = driver.getTitle();
 		System.out.println("Title is----->" + title);
 		Assert.assertEquals("Register your Timely account - Timely", title);
@@ -57,7 +59,9 @@ public class SignupStepDefination extends TestBase {
 	@Then("^user enters Email$")
 	public void user_enters_Email() throws Exception {
 		signupTest.getinstance().enteremail("ABC@memorytest.ai");
-		signupTest.getinstance().takescreenshot(driver, "Screenshots/"+"ScreenShot_"+driver.getClass().getName().toString()+".jpg");
+		signupTest.getinstance().takescreenshot(driver,
+				"Screenshots/" + "ScreenShot_" + driver.getClass().getName().toString() + ".jpg");
+		Log.info("Screenshot captured in Screenshots folder");
 	}
 
 	@Then("^user enters FullName$")
@@ -76,10 +80,13 @@ public class SignupStepDefination extends TestBase {
 	}
 
 	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_and_and(String email, String fullname, String password) {
+	public void user_enters_and_and(String email, String fullname, String password) throws FileNotFoundException, Exception {
 		driver.findElement(By.id("email")).sendKeys(email);
 		driver.findElement(By.id("name")).sendKeys(fullname);
 		driver.findElement(By.id("password")).sendKeys(password);
+		signupTest.getinstance().takescreenshot(driver,
+				"Screenshots/" + "ScreenShot_" + driver.getClass().getName().toString() + ".jpg");
+		Log.info("Registration in progress");
 	}
 
 	@Then("^user is on home page$")
@@ -93,13 +100,39 @@ public class SignupStepDefination extends TestBase {
 	public void validate_home_page_title() throws Throwable {
 		String title = driver.getTitle();
 		Assert.assertEquals("Welcome to Timely! – Timely", title);
-	
+
 	}
 
+	@Then("^user click on password viewbox$")
+	public void user_click_on_password_viewbox() throws Throwable {
+		signupTest.getinstance().validateviewbox();
+		signupTest.getinstance().takescreenshot(driver,
+				"Screenshots/" + "ScreenShot_" + driver.getClass().getName().toString() + ".jpg");
+		Log.info("Password view box validated");
+	}
+
+	@Then("^user clicks on terms and service$")
+	public void user_clicks_on_terms_and_service() throws FileNotFoundException {
+		signupTest.getinstance().validatetermsandservice();
+		Log.info("terms and service validated");
+	}
+
+	@Then("^verify terms and service title$")
+	public void verify_terms_and_service_title() throws Throwable {
+		List<String> browserTabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(browserTabs.get(1));
+		Log.info("Validating Url: terma and services");
+		String new_windowtitle = "Terms of Service";
+		Assert.assertEquals(new_windowtitle, driver.getTitle());
+		signupTest.getinstance().takescreenshot(driver,
+				"Screenshots/" + "ScreenShot_" + driver.getClass().getName().toString() + ".jpg");
+		driver.close();
+		driver.switchTo().window(browserTabs.get(0));
+		
+	}
 	@When("^login page is betimely$")
-	public void login_page_is_betimely() {
-		String url = "https://app.hydra.betimely.com/join";
-		Assert.assertEquals(url, driver.getCurrentUrl());
-
+	public void login_page_is_betimely() throws Throwable {
+	    System.out.println("True");
 	}
+
 }

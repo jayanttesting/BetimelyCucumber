@@ -3,7 +3,6 @@ package com.qa.pages;
 import java.io.FileNotFoundException;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -44,6 +43,12 @@ public class signupTest extends TestBase {
 
 	@FindBy(xpath = "(//div[@class='error_message'])[3]")
 	WebElement password_validation;
+
+	@FindBy(xpath = "//div[@class='toggle']")
+	WebElement viewbox;
+
+	@FindBy(xpath = "//a[contains(text(),'Terms of Service.')]")
+	WebElement terms_and_service;
 
 	public signupTest() throws FileNotFoundException {
 
@@ -87,6 +92,14 @@ public class signupTest extends TestBase {
 
 	public void validatesummit_disable() {
 		Assert.assertFalse(submit_button.isEnabled());
+	}
+
+	public void validateviewbox() {
+		viewbox.click();
+	}
+
+	public void validatetermsandservice() {
+		terms_and_service.click();
 	}
 
 }
