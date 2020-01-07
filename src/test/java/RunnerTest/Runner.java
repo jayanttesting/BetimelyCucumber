@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "src/main/java/Features", glue = { "StepDefination" }, format = { "pretty",
 		"html:test-GenerateOutput" }, // Generate report
 		monochrome = true, // Display console output in a proper readable format
-		dryRun = true // TO check mapping between feature file and step
+		dryRun = false // TO check mapping between feature file and step
 )
 public class Runner {
 
