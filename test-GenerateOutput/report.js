@@ -7,37 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Scenario: Betimely Sigup Test scenario"
-    },
-    {
-      "line": 3,
-      "value": "#\tGiven user is already on signup page"
-    },
-    {
-      "line": 4,
-      "value": "#\tWhen  login page is betimely"
-    },
-    {
-      "line": 5,
-      "value": "#\tThen user enters Email"
-    },
-    {
-      "line": 6,
-      "value": "#\tAnd user enters FullName"
-    },
-    {
-      "line": 7,
-      "value": "#\tAnd user enters Password"
-    },
-    {
-      "line": 8,
-      "value": "#\tThen user clicks on submit button"
-    }
-  ],
-  "line": 9,
+  "line": 3,
   "name": "Validate Signup with valid inputs",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-valid-inputs",
@@ -45,32 +15,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 11,
+  "line": 5,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
+  "line": 6,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 7,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 8,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 15,
+  "line": 9,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 17,
+  "line": 11,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-valid-inputs;",
@@ -81,27 +51,27 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 18,
+      "line": 12,
       "id": "betimely-sigup-feature;validate-signup-with-valid-inputs;;1"
     },
     {
       "cells": [
-        "ABC3@memorytest.ai",
+        "ABC4@memorytest.ai",
         "test Two",
         "Welcome1234"
       ],
-      "line": 19,
+      "line": 13,
       "id": "betimely-sigup-feature;validate-signup-with-valid-inputs;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 7102612700,
+  "duration": 6429676000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 13,
   "name": "Validate Signup with valid inputs",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-valid-inputs;;2",
@@ -109,18 +79,18 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 11,
+  "line": 5,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
+  "line": 6,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
-  "name": "user enters \"ABC3@memorytest.ai\" and \"test Two\" and \"\u003cPassword\u003e\"",
+  "line": 7,
+  "name": "user enters \"ABC4@memorytest.ai\" and \"test Two\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
     1
@@ -128,12 +98,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 8,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 15,
+  "line": 9,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -141,20 +111,20 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 118381200,
+  "duration": 134424400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 11109500,
+  "duration": 13482500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ABC3@memorytest.ai",
+      "val": "ABC4@memorytest.ai",
       "offset": 13
     },
     {
@@ -169,30 +139,30 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 913247600,
+  "duration": 1182436700,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 759802000,
+  "duration": 670238900,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
 });
 formatter.result({
-  "duration": 10313700,
-  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Welcome to Timely! ]– Timely\u003e but was:\u003c[404 not found]– Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.validate_home_page_title(SignupStepDefination.java:102)\r\n\tat ✽.Then validate home page title(signup.feature:15)\r\n",
+  "duration": 19492500,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Welcome to Timely! ]– Timely\u003e but was:\u003c[404 not found]– Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.validate_home_page_title(SignupStepDefination.java:102)\r\n\tat ✽.Then validate home page title(signup.feature:9)\r\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 694733700,
+  "duration": 755813600,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 21,
+  "line": 15,
   "name": "Validate signup with blank fields",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-blank-fields",
@@ -200,32 +170,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 23,
+  "line": 17,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
+  "line": 18,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 19,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 20,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
+  "line": 21,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 29,
+  "line": 23,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-blank-fields;",
@@ -236,7 +206,7 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 30,
+      "line": 24,
       "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;1"
     },
     {
@@ -245,7 +215,7 @@ formatter.examples({
         "Test One",
         "Welcome@1234"
       ],
-      "line": 31,
+      "line": 25,
       "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;2"
     },
     {
@@ -254,7 +224,7 @@ formatter.examples({
         "",
         "Welcome@1234"
       ],
-      "line": 32,
+      "line": 26,
       "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;3"
     },
     {
@@ -263,7 +233,7 @@ formatter.examples({
         "test Two",
         ""
       ],
-      "line": 33,
+      "line": 27,
       "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;4"
     },
     {
@@ -272,18 +242,18 @@ formatter.examples({
         "",
         ""
       ],
-      "line": 34,
+      "line": 28,
       "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 7121987200,
+  "duration": 4398473000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 31,
+  "line": 25,
   "name": "Validate signup with blank fields",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;2",
@@ -291,17 +261,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 23,
+  "line": 17,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
+  "line": 18,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 19,
   "name": "user enters \"\" and \"Test One\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -310,12 +280,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 20,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
+  "line": 21,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -323,15 +293,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 6124700,
+  "duration": 14870600,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 7791600,
-  "status": "passed"
+  "duration": 15524400,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -351,16 +322,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 743423900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 15260600,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:26)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -369,15 +337,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 660070800,
+  "duration": 705309000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5004808600,
+  "duration": 4301289300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 32,
+  "line": 26,
   "name": "Validate signup with blank fields",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;3",
@@ -385,17 +353,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 23,
+  "line": 17,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
+  "line": 18,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 19,
   "name": "user enters \"ABC3@memorytest.ai\" and \"\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -404,12 +372,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 20,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
+  "line": 21,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -417,15 +385,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 9819500,
+  "duration": 12561300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 8471900,
-  "status": "passed"
+  "duration": 12974300,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -445,16 +414,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 722818900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 221300,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:26)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -463,15 +429,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 660476000,
+  "duration": 671007800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5290730900,
+  "duration": 5540023000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
+  "line": 27,
   "name": "Validate signup with blank fields",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;4",
@@ -479,17 +445,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 23,
+  "line": 17,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
+  "line": 18,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 19,
   "name": "user enters \"ABC3@memorytest.ai\" and \"test Two\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -498,12 +464,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 20,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
+  "line": 21,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -511,14 +477,14 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 8307700,
+  "duration": 8447000,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 6563500,
+  "duration": 8029000,
   "status": "passed"
 });
 formatter.match({
@@ -539,15 +505,15 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 767840100,
+  "duration": 925341300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 467400,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:26)\r\n",
+  "duration": 7881100,
+  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-205TT8KS\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:20)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -557,15 +523,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 647864800,
+  "duration": 754195600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5253690300,
+  "duration": 5391518200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 34,
+  "line": 28,
   "name": "Validate signup with blank fields",
   "description": "",
   "id": "betimely-sigup-feature;validate-signup-with-blank-fields;;5",
@@ -573,17 +539,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 23,
+  "line": 17,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
+  "line": 18,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 19,
   "name": "user enters \"\" and \"\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -592,12 +558,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 20,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 27,
+  "line": 21,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -605,14 +571,14 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 10437900,
+  "duration": 11016600,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 8059300,
+  "duration": 13169600,
   "status": "passed"
 });
 formatter.match({
@@ -633,15 +599,15 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 679262500,
+  "duration": 898055100,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 224700,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:26)\r\n",
+  "duration": 457400,
+  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-205TT8KS\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:20)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -651,11 +617,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 647232900,
+  "duration": 703843300,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 36,
+  "line": 30,
   "name": "Validate with garbage values",
   "description": "",
   "id": "betimely-sigup-feature;validate-with-garbage-values",
@@ -663,32 +629,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 38,
+  "line": 32,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 39,
+  "line": 33,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
+  "line": 34,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
+  "line": 35,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 42,
+  "line": 36,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 44,
+  "line": 38,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;validate-with-garbage-values;",
@@ -699,45 +665,45 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 45,
+      "line": 39,
       "id": "betimely-sigup-feature;validate-with-garbage-values;;1"
     },
     {
       "cells": [
-        "Abc34@ met ry Test . a i",
+        "Abc44@ met ry Test . a i",
         "Marc Anthony",
         "Welcome@1234"
       ],
-      "line": 46,
+      "line": 40,
       "id": "betimely-sigup-feature;validate-with-garbage-values;;2"
     },
     {
       "cells": [
-        "Abc35@memorytest.ai",
+        "Abc45@memorytest.ai",
         "MAR C An tho ny",
         "Welcome@1234"
       ],
-      "line": 47,
+      "line": 41,
       "id": "betimely-sigup-feature;validate-with-garbage-values;;3"
     },
     {
       "cells": [
-        "Abc36@memorytest.ai",
+        "Abc46@memorytest.ai",
         "Marc Anthony",
         "We lc ome@12 34"
       ],
-      "line": 48,
+      "line": 42,
       "id": "betimely-sigup-feature;validate-with-garbage-values;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5426130000,
+  "duration": 4583643600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 46,
+  "line": 40,
   "name": "Validate with garbage values",
   "description": "",
   "id": "betimely-sigup-feature;validate-with-garbage-values;;2",
@@ -745,18 +711,18 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 38,
+  "line": 32,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 39,
+  "line": 33,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
-  "name": "user enters \"Abc34@ met ry Test . a i\" and \"Marc Anthony\" and \"\u003cPassword\u003e\"",
+  "line": 34,
+  "name": "user enters \"Abc44@ met ry Test . a i\" and \"Marc Anthony\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
     1
@@ -764,12 +730,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
+  "line": 35,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 42,
+  "line": 36,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -777,20 +743,21 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 12104400,
+  "duration": 10910800,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 6635500,
-  "status": "passed"
+  "duration": 11607300,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:33)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abc34@ met ry Test . a i",
+      "val": "Abc44@ met ry Test . a i",
       "offset": 13
     },
     {
@@ -805,16 +772,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 796748300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 430500,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:41)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -823,15 +787,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 631906900,
+  "duration": 640908100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4971804900,
+  "duration": 4178214700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 47,
+  "line": 41,
   "name": "Validate with garbage values",
   "description": "",
   "id": "betimely-sigup-feature;validate-with-garbage-values;;3",
@@ -839,18 +803,18 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 38,
+  "line": 32,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 39,
+  "line": 33,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
-  "name": "user enters \"Abc35@memorytest.ai\" and \"MAR C An tho ny\" and \"\u003cPassword\u003e\"",
+  "line": 34,
+  "name": "user enters \"Abc45@memorytest.ai\" and \"MAR C An tho ny\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
     1
@@ -858,12 +822,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
+  "line": 35,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 42,
+  "line": 36,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -871,20 +835,21 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 9036800,
+  "duration": 11512300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 7200000,
-  "status": "passed"
+  "duration": 10264700,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:33)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abc35@memorytest.ai",
+      "val": "Abc45@memorytest.ai",
       "offset": 13
     },
     {
@@ -899,16 +864,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 827114100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 244400,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:41)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -917,15 +879,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 681234200,
+  "duration": 658411800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5940701800,
+  "duration": 4209054300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 48,
+  "line": 42,
   "name": "Validate with garbage values",
   "description": "",
   "id": "betimely-sigup-feature;validate-with-garbage-values;;4",
@@ -933,18 +895,18 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 38,
+  "line": 32,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 39,
+  "line": 33,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
-  "name": "user enters \"Abc36@memorytest.ai\" and \"Marc Anthony\" and \"\u003cPassword\u003e\"",
+  "line": 34,
+  "name": "user enters \"Abc46@memorytest.ai\" and \"Marc Anthony\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
     1
@@ -952,12 +914,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
+  "line": 35,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 42,
+  "line": 36,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -965,20 +927,21 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 5884700,
+  "duration": 14915000,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 8413000,
-  "status": "passed"
+  "duration": 16659800,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:33)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Abc36@memorytest.ai",
+      "val": "Abc46@memorytest.ai",
       "offset": 13
     },
     {
@@ -993,16 +956,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 843864100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 396700,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:41)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1011,11 +971,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 661459000,
+  "duration": 671818500,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 50,
+  "line": 44,
   "name": "Validate sigup fields error messsage",
   "description": "",
   "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage",
@@ -1023,32 +983,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 52,
+  "line": 46,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 53,
+  "line": 47,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
+  "line": 48,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 49,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 50,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 58,
+  "line": 52,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;",
@@ -1059,7 +1019,7 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 59,
+      "line": 53,
       "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;1"
     },
     {
@@ -1068,16 +1028,16 @@ formatter.examples({
         "Test One",
         "Welcome@1234"
       ],
-      "line": 60,
+      "line": 54,
       "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;2"
     },
     {
       "cells": [
-        "ABC3@memorytest.ai",
+        "ABC2@memorytest.ai",
         "Test1234",
         "Welcome@1234"
       ],
-      "line": 61,
+      "line": 55,
       "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;3"
     },
     {
@@ -1086,7 +1046,7 @@ formatter.examples({
         "test Two",
         ""
       ],
-      "line": 62,
+      "line": 56,
       "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;4"
     },
     {
@@ -1096,18 +1056,18 @@ formatter.examples({
         "ABC3@memorytest.ai",
         ""
       ],
-      "line": 63,
+      "line": 57,
       "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5638456300,
+  "duration": 4223914300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 60,
+  "line": 54,
   "name": "Validate sigup fields error messsage",
   "description": "",
   "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;2",
@@ -1115,17 +1075,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 52,
+  "line": 46,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 53,
+  "line": 47,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
+  "line": 48,
   "name": "user enters \"Test14@memorytest.ai\" and \"Test One\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -1134,12 +1094,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 49,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 50,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1147,15 +1107,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 9221200,
+  "duration": 15484400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 7747900,
-  "status": "passed"
+  "duration": 16078500,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:47)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1175,16 +1136,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 909587100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 631300,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:55)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1193,15 +1151,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 635434100,
+  "duration": 657340200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5145693100,
+  "duration": 4623815800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 61,
+  "line": 55,
   "name": "Validate sigup fields error messsage",
   "description": "",
   "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;3",
@@ -1209,18 +1167,18 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 52,
+  "line": 46,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 53,
+  "line": 47,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
-  "name": "user enters \"ABC3@memorytest.ai\" and \"Test1234\" and \"\u003cPassword\u003e\"",
+  "line": 48,
+  "name": "user enters \"ABC2@memorytest.ai\" and \"Test1234\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
     1
@@ -1228,12 +1186,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 49,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 50,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1241,20 +1199,21 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 8668800,
+  "duration": 9862300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 7676500,
-  "status": "passed"
+  "duration": 10762900,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:47)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ABC3@memorytest.ai",
+      "val": "ABC2@memorytest.ai",
       "offset": 13
     },
     {
@@ -1269,16 +1228,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 790383300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 446400,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:55)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1287,15 +1243,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 654324100,
+  "duration": 640128400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6156996200,
+  "duration": 4228695100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 62,
+  "line": 56,
   "name": "Validate sigup fields error messsage",
   "description": "",
   "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;4",
@@ -1303,17 +1259,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 52,
+  "line": 46,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 53,
+  "line": 47,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
+  "line": 48,
   "name": "user enters \"ABC3@memorytest.ai\" and \"test Two\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -1322,12 +1278,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 49,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 50,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1335,15 +1291,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 9575000,
+  "duration": 15908300,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 15459600,
-  "status": "passed"
+  "duration": 15475500,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:47)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1363,16 +1320,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 774572600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 261500,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:55)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1381,15 +1335,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 661257600,
+  "duration": 664842500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5312795900,
+  "duration": 4192495400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 63,
+  "line": 57,
   "name": "Validate sigup fields error messsage",
   "description": "",
   "id": "betimely-sigup-feature;validate-sigup-fields-error-messsage;;5",
@@ -1397,17 +1351,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 52,
+  "line": 46,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 53,
+  "line": 47,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 54,
+  "line": 48,
   "name": "user enters \"\" and \"\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -1416,12 +1370,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 49,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 50,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1429,15 +1383,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 10717400,
+  "duration": 7279400,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 12509900,
-  "status": "passed"
+  "duration": 11305300,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:47)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1457,16 +1412,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 763703900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 424000,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:55)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1475,11 +1427,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 652481700,
+  "duration": 1283152900,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 65,
+  "line": 59,
   "name": "Verify char length of all fields",
   "description": "",
   "id": "betimely-sigup-feature;verify-char-length-of-all-fields",
@@ -1487,32 +1439,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 67,
+  "line": 61,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 68,
+  "line": 62,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 69,
+  "line": 63,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 70,
+  "line": 64,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 71,
+  "line": 65,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 73,
+  "line": 67,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;verify-char-length-of-all-fields;",
@@ -1523,7 +1475,7 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 74,
+      "line": 68,
       "id": "betimely-sigup-feature;verify-char-length-of-all-fields;;1"
     },
     {
@@ -1532,18 +1484,18 @@ formatter.examples({
         "testnjdbdbehjdebhb5878578784884847674",
         "Welcome1234hjsbdhdsghgdvshhfdhsghfghdf"
       ],
-      "line": 75,
+      "line": 69,
       "id": "betimely-sigup-feature;verify-char-length-of-all-fields;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5455128600,
+  "duration": 4294956700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 75,
+  "line": 69,
   "name": "Verify char length of all fields",
   "description": "",
   "id": "betimely-sigup-feature;verify-char-length-of-all-fields;;2",
@@ -1551,17 +1503,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 67,
+  "line": 61,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 68,
+  "line": 62,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 69,
+  "line": 63,
   "name": "user enters \"ABNCCBjjejwdhjdehjdejejejknejnjenenjknjnejwnjkeejew\" and \"testnjdbdbehjdebhb5878578784884847674\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -1570,12 +1522,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 70,
+  "line": 64,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 71,
+  "line": 65,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1583,15 +1535,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 7147300,
+  "duration": 15617500,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 8179300,
-  "status": "passed"
+  "duration": 14476100,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:62)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1611,16 +1564,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 1025359000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 238200,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:70)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1629,11 +1579,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 647839100,
+  "duration": 692650900,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 77,
+  "line": 71,
   "name": "Verify all fields with upper case",
   "description": "",
   "id": "betimely-sigup-feature;verify-all-fields-with-upper-case",
@@ -1641,32 +1591,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 79,
+  "line": 73,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 80,
+  "line": 74,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 81,
+  "line": 75,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 82,
+  "line": 76,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 83,
+  "line": 77,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 85,
+  "line": 79,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;verify-all-fields-with-upper-case;",
@@ -1677,7 +1627,7 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 86,
+      "line": 80,
       "id": "betimely-sigup-feature;verify-all-fields-with-upper-case;;1"
     },
     {
@@ -1686,18 +1636,18 @@ formatter.examples({
         "MARC",
         "WELCOME@!@#$%"
       ],
-      "line": 87,
+      "line": 81,
       "id": "betimely-sigup-feature;verify-all-fields-with-upper-case;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4983783400,
+  "duration": 4326792600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 87,
+  "line": 81,
   "name": "Verify all fields with upper case",
   "description": "",
   "id": "betimely-sigup-feature;verify-all-fields-with-upper-case;;2",
@@ -1705,17 +1655,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 79,
+  "line": 73,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 80,
+  "line": 74,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 81,
+  "line": 75,
   "name": "user enters \"ABC4@MEMORYTEST.AI\" and \"MARC\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -1724,12 +1674,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 82,
+  "line": 76,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 83,
+  "line": 77,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1737,15 +1687,16 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 8786500,
+  "duration": 13621800,
   "status": "passed"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 7342900,
-  "status": "passed"
+  "duration": 16357100,
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Register your Timely account -] Timely\u003e but was:\u003c[500 Internal server error–] Timely\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat StepDefination.SignupStepDefination.title_of_sign_page_is_betimely(SignupStepDefination.java:56)\r\n\tat ✽.When title of sign page is betimely(signup.feature:74)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -1765,16 +1716,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 958669600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 452800,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:82)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1783,11 +1731,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 631997200,
+  "duration": 710448000,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 89,
+  "line": 83,
   "name": "Validate fields with special characters",
   "description": "",
   "id": "betimely-sigup-feature;validate-fields-with-special-characters",
@@ -1795,32 +1743,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 91,
+  "line": 85,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 92,
+  "line": 86,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 93,
+  "line": 87,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 94,
+  "line": 88,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 95,
+  "line": 89,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 97,
+  "line": 91,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;validate-fields-with-special-characters;",
@@ -1831,7 +1779,7 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 98,
+      "line": 92,
       "id": "betimely-sigup-feature;validate-fields-with-special-characters;;1"
     },
     {
@@ -1840,18 +1788,19 @@ formatter.examples({
         "!@#$%^\u0026*()",
         "WELCOME@!@#$%"
       ],
-      "line": 99,
+      "line": 93,
       "id": "betimely-sigup-feature;validate-fields-with-special-characters;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5883000300,
-  "status": "passed"
+  "duration": 5050067400,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal\n  (Session info: chrome\u003d79.0.3945.117)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-205TT8KS\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\Shivam\\AppData\\Local\\Temp\\scoped_dir22752_28881}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d79.0.3945.117, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 16a6de67e003d40b9b9e1d9f2b5fbbce\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:934)\r\n\tat com.qa.util.TestBase.initialize(TestBase.java:52)\r\n\tat StepDefination.SignupStepDefination.setup(SignupStepDefination.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "line": 99,
+  "line": 93,
   "name": "Validate fields with special characters",
   "description": "",
   "id": "betimely-sigup-feature;validate-fields-with-special-characters;;2",
@@ -1859,17 +1808,17 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 91,
+  "line": 85,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 92,
+  "line": 86,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 93,
+  "line": 87,
   "name": "user enters \"ABC4@MEMORYTEST.AI\" and \"!@#$%^\u0026*()\" and \"\u003cPassword\u003e\"",
   "matchedColumns": [
     0,
@@ -1878,12 +1827,12 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 94,
+  "line": 88,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 95,
+  "line": 89,
   "name": "validate home page title",
   "keyword": "Then "
 });
@@ -1891,15 +1840,13 @@ formatter.match({
   "location": "SignupStepDefination.user_is_already_on_signup_page()"
 });
 formatter.result({
-  "duration": 8464800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
 });
 formatter.result({
-  "duration": 7075100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1919,16 +1866,13 @@ formatter.match({
   "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 807703400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.user_clicks_on_submit_button()"
 });
 formatter.result({
-  "duration": 247100,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:94)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SignupStepDefination.validate_home_page_title()"
@@ -1937,11 +1881,12 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 660260200,
-  "status": "passed"
+  "duration": 651100,
+  "error_message": "java.lang.NullPointerException\r\n\tat StepDefination.SignupStepDefination.teardown(SignupStepDefination.java:41)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
 });
 formatter.scenarioOutline({
-  "line": 101,
+  "line": 95,
   "name": "Verify sql injections",
   "description": "",
   "id": "betimely-sigup-feature;verify-sql-injections",
@@ -1949,32 +1894,32 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 103,
+  "line": 97,
   "name": "user is already on signup page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 104,
+  "line": 98,
   "name": "title of sign page is betimely",
   "keyword": "When "
 });
 formatter.step({
-  "line": 105,
+  "line": 99,
   "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 106,
+  "line": 100,
   "name": "user clicks on submit button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 107,
+  "line": 101,
   "name": "validate home page title",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 109,
+  "line": 103,
   "name": "",
   "description": "",
   "id": "betimely-sigup-feature;verify-sql-injections;",
@@ -1985,7 +1930,7 @@ formatter.examples({
         "FullName",
         "password"
       ],
-      "line": 110,
+      "line": 104,
       "id": "betimely-sigup-feature;verify-sql-injections;;1"
     },
     {
@@ -1994,7 +1939,7 @@ formatter.examples({
         "Marco Polo",
         "KIKO@1234"
       ],
-      "line": 111,
+      "line": 105,
       "id": "betimely-sigup-feature;verify-sql-injections;;2"
     },
     {
@@ -2003,7 +1948,7 @@ formatter.examples({
         "Delete * from webinfo",
         "KIKI@1234"
       ],
-      "line": 112,
+      "line": 106,
       "id": "betimely-sigup-feature;verify-sql-injections;;3"
     },
     {
@@ -2012,1694 +1957,9 @@ formatter.examples({
         "marco Polp",
         "select * from password"
       ],
-      "line": 113,
+      "line": 107,
       "id": "betimely-sigup-feature;verify-sql-injections;;4"
     }
   ],
   "keyword": "Examples"
-});
-formatter.before({
-  "duration": 5426554400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 111,
-  "name": "Verify sql injections",
-  "description": "",
-  "id": "betimely-sigup-feature;verify-sql-injections;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 103,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 104,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 105,
-  "name": "user enters \"select * from 1\u003d1\" and \"Marco Polo\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 106,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 107,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6289400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 9579300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "select * from 1\u003d1",
-      "offset": 13
-    },
-    {
-      "val": "Marco Polo",
-      "offset": 37
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 54
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 765580300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 400300,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:106)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 1131850600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7059863400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 112,
-  "name": "Verify sql injections",
-  "description": "",
-  "id": "betimely-sigup-feature;verify-sql-injections;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 103,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 104,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 105,
-  "name": "user enters \"Mi@memorytest.ai\" and \"Delete * from webinfo\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 106,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 107,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6077700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 8421000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Mi@memorytest.ai",
-      "offset": 13
-    },
-    {
-      "val": "Delete * from webinfo",
-      "offset": 36
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 64
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 838763500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 436000,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:106)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 658727400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5314006700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 113,
-  "name": "Verify sql injections",
-  "description": "",
-  "id": "betimely-sigup-feature;verify-sql-injections;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 103,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 104,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 105,
-  "name": "user enters \"Mi1@memorytest.ai\" and \"marco Polp\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 106,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 107,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6279200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 9435800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Mi1@memorytest.ai",
-      "offset": 13
-    },
-    {
-      "val": "marco Polp",
-      "offset": 37
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 54
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 762979300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 203500,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:106)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 1187163600,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 115,
-  "name": "Validate email with ip address",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-email-with-ip-address",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 117,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 118,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 119,
-  "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 120,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 121,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 123,
-  "name": "",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-email-with-ip-address;",
-  "rows": [
-    {
-      "cells": [
-        "Email",
-        "FullName",
-        "password"
-      ],
-      "line": 124,
-      "id": "betimely-sigup-feature;validate-email-with-ip-address;;1"
-    },
-    {
-      "cells": [
-        "name@198.168.1.1",
-        "SamTest",
-        "Welcome1234"
-      ],
-      "line": 125,
-      "id": "betimely-sigup-feature;validate-email-with-ip-address;;2"
-    },
-    {
-      "cells": [
-        "name2@memorytest.ai",
-        "192.168.255.255",
-        "Welcome@1234"
-      ],
-      "line": 126,
-      "id": "betimely-sigup-feature;validate-email-with-ip-address;;3"
-    },
-    {
-      "cells": [
-        "name3@memorytest.ai",
-        "SamTest Test",
-        "192.165.2.1"
-      ],
-      "line": 127,
-      "id": "betimely-sigup-feature;validate-email-with-ip-address;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 6405220400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 125,
-  "name": "Validate email with ip address",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-email-with-ip-address;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 117,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 118,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 119,
-  "name": "user enters \"name@198.168.1.1\" and \"SamTest\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 120,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 121,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6946800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 8755200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name@198.168.1.1",
-      "offset": 13
-    },
-    {
-      "val": "SamTest",
-      "offset": 36
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 50
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 880626600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 357000,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:120)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 640898600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5980572500,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 126,
-  "name": "Validate email with ip address",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-email-with-ip-address;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 117,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 118,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 119,
-  "name": "user enters \"name2@memorytest.ai\" and \"192.168.255.255\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 120,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 121,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6123100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 9291800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name2@memorytest.ai",
-      "offset": 13
-    },
-    {
-      "val": "192.168.255.255",
-      "offset": 39
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 61
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 997450900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 388400,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:120)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 636910300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5108835600,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 127,
-  "name": "Validate email with ip address",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-email-with-ip-address;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 117,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 118,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 119,
-  "name": "user enters \"name3@memorytest.ai\" and \"SamTest Test\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 120,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 121,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6772900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 8398500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name3@memorytest.ai",
-      "offset": 13
-    },
-    {
-      "val": "SamTest Test",
-      "offset": 39
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 58
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 759796500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 185600,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:120)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 824691100,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 129,
-  "name": "Validate with invalid email",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-with-invalid-email",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 131,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 132,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 133,
-  "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 134,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 135,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 137,
-  "name": "",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-with-invalid-email;",
-  "rows": [
-    {
-      "cells": [
-        "Email",
-        "FullName",
-        "password"
-      ],
-      "line": 138,
-      "id": "betimely-sigup-feature;validate-with-invalid-email;;1"
-    },
-    {
-      "cells": [
-        "ABC3@memorytest.ai@gmail.com",
-        "test Two",
-        "Welcome1234"
-      ],
-      "line": 139,
-      "id": "betimely-sigup-feature;validate-with-invalid-email;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 6038288400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 139,
-  "name": "Validate with invalid email",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-with-invalid-email;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 131,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 132,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 133,
-  "name": "user enters \"ABC3@memorytest.ai@gmail.com\" and \"test Two\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 134,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 135,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6246100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 9670700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ABC3@memorytest.ai@gmail.com",
-      "offset": 13
-    },
-    {
-      "val": "test Two",
-      "offset": 48
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 63
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 853933100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 375800,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:134)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 639950800,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 141,
-  "name": "Validate name and password field by entering email",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 143,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 144,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 145,
-  "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 146,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 147,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 149,
-  "name": "",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email;",
-  "rows": [
-    {
-      "cells": [
-        "Email",
-        "FullName",
-        "password"
-      ],
-      "line": 150,
-      "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email;;1"
-    },
-    {
-      "cells": [
-        "ABC11@memorytest.ai",
-        "@memorytest.ai",
-        "Welcome1234"
-      ],
-      "line": 151,
-      "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email;;2"
-    },
-    {
-      "cells": [
-        "xyz23@memorytest.ai",
-        "Jayant Gupta",
-        "jayant.gupta@memorytest.ai"
-      ],
-      "line": 152,
-      "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 5811515100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 151,
-  "name": "Validate name and password field by entering email",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 143,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 144,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 145,
-  "name": "user enters \"ABC11@memorytest.ai\" and \"@memorytest.ai\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 146,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 147,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 4643000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 8619700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ABC11@memorytest.ai",
-      "offset": 13
-    },
-    {
-      "val": "@memorytest.ai",
-      "offset": 39
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 60
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 888491100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 438700,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:146)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 653587700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5391230300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 152,
-  "name": "Validate name and password field by entering email",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-name-and-password-field-by-entering-email;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 143,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 144,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 145,
-  "name": "user enters \"xyz23@memorytest.ai\" and \"Jayant Gupta\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 146,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 147,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 8926000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 6300500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "xyz23@memorytest.ai",
-      "offset": 13
-    },
-    {
-      "val": "Jayant Gupta",
-      "offset": 39
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 58
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 853261100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 232100,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:146)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 641916400,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 154,
-  "name": "Validate full name without prefix",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-full-name-without-prefix",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 156,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 157,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 158,
-  "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 159,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 160,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 162,
-  "name": "",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-full-name-without-prefix;",
-  "rows": [
-    {
-      "cells": [
-        "Email",
-        "FullName",
-        "password"
-      ],
-      "line": 163,
-      "id": "betimely-sigup-feature;validate-full-name-without-prefix;;1"
-    },
-    {
-      "cells": [
-        "name@memorytestai",
-        "Test1",
-        "Welcome1234"
-      ],
-      "line": 164,
-      "id": "betimely-sigup-feature;validate-full-name-without-prefix;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 7401639700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 164,
-  "name": "Validate full name without prefix",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-full-name-without-prefix;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 156,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 157,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 158,
-  "name": "user enters \"name@memorytestai\" and \"Test1\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 159,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 160,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 5946300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 14570400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name@memorytestai",
-      "offset": 13
-    },
-    {
-      "val": "Test1",
-      "offset": 37
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 49
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 743933600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 168600,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:159)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 1032766700,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 166,
-  "name": "Validate sigup with HTML tags",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-sigup-with-html-tags",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 168,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 169,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 170,
-  "name": "user enters \"\u003cEmail\u003e\" and \"\u003cFullName\u003e\" and \"\u003cPassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 171,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 172,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 174,
-  "name": "",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-sigup-with-html-tags;",
-  "rows": [
-    {
-      "cells": [
-        "Email",
-        "FullName",
-        "password"
-      ],
-      "line": 175,
-      "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;1"
-    },
-    {
-      "cells": [
-        "name@memorytestai",
-        "\u003ctest\u003e\u003c/test\u003e",
-        "Welcome1234"
-      ],
-      "line": 176,
-      "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;2"
-    },
-    {
-      "cells": [
-        "\u003cP\u003e\u003c/P\u003e",
-        "Kim Jhones",
-        "Welcome1234"
-      ],
-      "line": 177,
-      "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;3"
-    },
-    {
-      "cells": [
-        "name@memorytestai",
-        "Kaira Test",
-        "Welcome\u003c/html\u003e"
-      ],
-      "line": 178,
-      "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 5061293300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 176,
-  "name": "Validate sigup with HTML tags",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 168,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 169,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 170,
-  "name": "user enters \"name@memorytestai\" and \"\u003ctest\u003e\u003c/test\u003e\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 171,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 172,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6289600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 9648800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name@memorytestai",
-      "offset": 13
-    },
-    {
-      "val": "\u003ctest\u003e\u003c/test\u003e",
-      "offset": 37
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 57
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 770761400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 319100,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:171)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 671470800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 6150581700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 177,
-  "name": "Validate sigup with HTML tags",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 168,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 169,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 170,
-  "name": "user enters \"\u003cP\u003e\u003c/P\u003e\" and \"Kim Jhones\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 171,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 172,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 6785800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 12749600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "\u003cP\u003e\u003c/P\u003e",
-      "offset": 13
-    },
-    {
-      "val": "Kim Jhones",
-      "offset": 27
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 44
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 708849800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 180600,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:171)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 661521900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5973036400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 178,
-  "name": "Validate sigup with HTML tags",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-sigup-with-html-tags;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 168,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 169,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 170,
-  "name": "user enters \"name@memorytestai\" and \"Kaira Test\" and \"\u003cPassword\u003e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 171,
-  "name": "user clicks on submit button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 172,
-  "name": "validate home page title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 7861700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 7195000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name@memorytestai",
-      "offset": 13
-    },
-    {
-      "val": "Kaira Test",
-      "offset": 37
-    },
-    {
-      "val": "\u003cPassword\u003e",
-      "offset": 54
-    }
-  ],
-  "location": "SignupStepDefination.user_enters_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 756056300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_submit_button()"
-});
-formatter.result({
-  "duration": 189600,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.clicksubmit(signupTest.java:74)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_submit_button(SignupStepDefination.java:79)\r\n\tat ✽.Then user clicks on submit button(signup.feature:171)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.validate_home_page_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 1212319600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 6369220300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 181,
-  "name": "Validate password viewbox",
-  "description": "",
-  "id": "betimely-sigup-feature;validate-password-viewbox",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 183,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 184,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 185,
-  "name": "user click on password viewbox",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 5104500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 8698100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_click_on_password_viewbox()"
-});
-formatter.result({
-  "duration": 326100,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.validateviewbox(signupTest.java:98)\r\n\tat StepDefination.SignupStepDefination.user_click_on_password_viewbox(SignupStepDefination.java:108)\r\n\tat ✽.Then user click on password viewbox(signup.feature:185)\r\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 624997900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5369227700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 187,
-  "name": "Verify terms of service",
-  "description": "",
-  "id": "betimely-sigup-feature;verify-terms-of-service",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 189,
-  "name": "user is already on signup page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 190,
-  "name": "title of sign page is betimely",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 191,
-  "name": "user clicks on terms and service",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 192,
-  "name": "verify terms and service title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SignupStepDefination.user_is_already_on_signup_page()"
-});
-formatter.result({
-  "duration": 7286300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.title_of_sign_page_is_betimely()"
-});
-formatter.result({
-  "duration": 10145900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SignupStepDefination.user_clicks_on_terms_and_service()"
-});
-formatter.result({
-  "duration": 215100,
-  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-45O4038I\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat com.qa.pages.signupTest.validatetermsandservice(signupTest.java:102)\r\n\tat StepDefination.SignupStepDefination.user_clicks_on_terms_and_service(SignupStepDefination.java:116)\r\n\tat ✽.Then user clicks on terms and service(signup.feature:191)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SignupStepDefination.verify_terms_and_service_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 658629700,
-  "status": "passed"
-});
 });
