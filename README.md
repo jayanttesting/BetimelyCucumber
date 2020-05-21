@@ -4,8 +4,9 @@
 Timely automatically records all the time you spend in different work apps to create an infallible timeline of your day.
 Capture everything — from documents and websites, to meetings, emails and GPS locations.
 
-# Framework Used : Cucumber
-# Project Type: Maven Project
+Framework Used : Cucumber
+
+Project Type: Maven Project
 
 # Key instructions to run test in eclipse
 1. Clone Git url in your local system at any directory.
