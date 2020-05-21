@@ -1,5 +1,8 @@
-# MemorytestAI
-Sign up page test cases
+# Mobicontrol-Cucumber
+
+# Description
+Timely automatically records all the time you spend in different work apps to create an infallible timeline of your day.
+Capture everything — from documents and websites, to meetings, emails and GPS locations.
 
 # Framework Used : Cucumber
 # Project Type: Maven Project
